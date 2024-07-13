@@ -1,0 +1,28 @@
+.stickyNav {
+  position: sticky;
+  top: 0;
+  // background-color: rgba(255, 255, 255, 0.8); /* Initial background color */
+  transition: background-color 0.3s ease; /* Smooth transition */
+  z-index: 1000;
+}
+
+.stickyNav.scrolled {
+  background-color: rgba(0, 0, 0, 0.8); /* Darker background color */
+}
+
+
+.navLink {
+  // color: white;
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 350;
+  font-family: 'Karla';
+}
+
+.desktopTab {
+  @media (min-width: 600px) {
+    display: flex;
+    justify-content: space-around; /* Distributes nav links evenly */
+    flex: 1; /* Takes remaining space in the container */
+  }
+}
